@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Department
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light" href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a>
+            <a class="dropdown-item text-light" href="https://en.wikipedia.org/wiki/Science">Science</a>
+            <a class="dropdown-item text-light" href="https://en.wikipedia.org/wiki/Commerce">Commerce</a>
+            <a class="dropdown-item text-light" href="https://en.wikipedia.org/wiki/Humanities">Humanities</a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<div class="container">
+    <h1 id="clickable-header" class="mt-5">Welcome to the Home Page!</h1>
+   <div class="ml-auto">
+        <nav>
+          <a href="/login" class="btn btn-primary">Login</a>
+
+        </nav>
+      </div>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById("clickable-header").addEventListener("click", function() {
+        window.location.href = "/newpage";
+    });
+</script>
+</body>
+</html>
